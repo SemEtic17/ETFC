@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── ETFC brand palette (single source of truth mirrored in tailwind.config.ts) ── */
+:root {
+  --primary: #d20a0a; /* Primary Red */
+  --deep: #0b0b0b; /* Deep Black */
+  --pure: #ffffff; /* Pure White */
+  --steel: #8a8d91; /* Cool Steel Gray */
+  --electric: #2779a7; /* Electric Blue */
+  --warning: #ff9a00; /* Warning Amber */
+  --surface: #1a1d20; /* Surface Dark Gray */
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Global background: Deep Black. Default text: Pure White. */
+  background-color: var(--deep);
+  color: var(--pure);
+  @apply antialiased;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: var(--pure);
+}
