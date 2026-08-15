@@ -9,7 +9,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "ETFC — ADWA FIGHT NIGHT",
+    default: "ETFC",
     template: "%s | ETFC",
   },
   description:
